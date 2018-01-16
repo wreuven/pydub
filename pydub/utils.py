@@ -56,6 +56,8 @@ def _fd_or_path_or_tempfile(fd, mode='w+b', tempfile=True):
         fd = TemporaryFile(mode=mode)
 
     if isinstance(fd, basestring):
+        print "*****************"
+        print fd
         fd = open(fd, mode=mode)
 
     return fd
