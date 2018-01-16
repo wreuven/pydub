@@ -59,6 +59,7 @@ def _fd_or_path_or_tempfile(fd, mode='w+b', tempfile=True):
         print "*****************"
         print fd
         fd = open(fd, mode=mode)
+        printf fd
 
     return fd
 
